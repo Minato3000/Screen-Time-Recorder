@@ -3,15 +3,15 @@ import json
 from dateutil import parser
 
 
-class AcitivyList:
+class AcitivtyList:
     def __init__(self, activities):
         self.activities = activities
 
     def initialize_me(self):
-        activity_list = AcitivyList([])
+        activity_list = AcitivtyList([])
         with open('activities.json', 'r') as f:
             data = json.load(f)
-            activity_list = AcitivyList(
+            activity_list = AcitivtyList(
                 activities=self.get_activities_from_json(data)
             )
         return activity_list
