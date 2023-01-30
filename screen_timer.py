@@ -11,7 +11,7 @@ import uiautomation as auto
 active_window_name = ""
 activity_name = ""
 start_time = datetime.datetime.now()
-activeList = AcitivtyList([])
+activeList = AcitivityList([])
 first_time = True
 
 
